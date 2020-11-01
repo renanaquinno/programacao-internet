@@ -20,7 +20,7 @@ from perfis import views
 
 urlpatterns = [
     path('', views.index, name = 'index'),
-    path('perfil/<int:perfil_id>', views.exibir_perfil, name= 'exibir'),
-    path('perfil/<int:perfil_id>/convidar', views.convidar, name= 'convidar'),
-
+    path('perfil/<int:perfil_id>', views.exibir_perfil, name='exibir'),
+    path('perfil/<int:perfil_id>/convidar', views.convidar, name='convidar'),
+    path('convite/<int:convite_id>/aceitar', views.aceitar, name='aceitar')
 ]

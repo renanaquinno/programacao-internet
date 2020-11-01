@@ -69,7 +69,9 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'connectedin.wsgi.application'
-
+WHITENOISE_MIMETYPES = {
+    '.xsl': 'application/xml'
+}
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
